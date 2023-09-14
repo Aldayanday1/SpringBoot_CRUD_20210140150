@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to My Application</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+    <style>
+        .custom-mt {
+            margin-top: 15rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container text-center">
+    <div class="jumbotron mt-8 custom-mt">
+        <h1 class="display-4">Welcome to Aldi Website</h1>
+        <p class="lead; m-5">Get started by managing users.</p>
+        <a class="btn btn-primary btn-lg" th:href="@{/users}" role="button">Manage Users</a>
+    </div>
+</div>
+</body>
+</html>
